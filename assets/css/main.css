@@ -66,21 +66,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 64px var(--gutter) 48px;
+  padding: 64px var(--gutter) calc(var(--arches-height) + 78px);
   max-width: 880px;
-}
-
-.site-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 8px 24px;
-  padding: 0 var(--gutter) calc(var(--arches-height) + 30px);
-  font-size: 12px;
-  color: var(--color-muted);
-  position: relative;
-  z-index: 1;
-  white-space: nowrap;
 }
 
 .arches {
@@ -114,50 +101,6 @@ a {
 
     &:first-of-type {
       margin-top: 28px;
-    }
-  }
-}
-
-.subscribe {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 36px;
-  max-width: 480px;
-
-  .subscribe__input {
-    flex: 1;
-    min-width: 200px;
-    border: 1px solid var(--color-ink);
-    border-radius: 0;
-    background: var(--color-surface);
-    color: var(--color-ink);
-    padding: 12px 14px;
-    font: 400 14px var(--font-mono);
-    outline: none;
-
-    &::placeholder {
-      color: var(--color-placeholder);
-    }
-
-    &:focus-visible {
-      border-color: var(--color-accent);
-    }
-  }
-
-  .subscribe__button {
-    white-space: nowrap;
-    background: var(--color-ink);
-    color: var(--color-bg);
-    border: 1px solid var(--color-ink);
-    padding: 12px 18px;
-    font: 500 14px var(--font-mono);
-    cursor: pointer;
-
-    &:hover,
-    &:focus-visible {
-      background: var(--color-accent);
-      border-color: var(--color-accent);
     }
   }
 }
