@@ -1,0 +1,2 @@
+#!/usr/bin/env ruby
+system("bundle exec jekyll build --strict_front_matter", exception: true)

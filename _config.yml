@@ -1,0 +1,19 @@
+title: Euruko 2027
+email: info@euruko.org
+description: >-
+  Euruko 2027, the European Ruby conference, in Modena, Italy.
+baseurl: ""
+url: "https://2027.euruko.org"
+
+# Where the newsletter form posts to. Leave empty until a provider is set up.
+newsletter_form_action: ""
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - bin/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
