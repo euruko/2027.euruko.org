@@ -8,10 +8,10 @@ layout: default
     We are working on the 2027 edition. Dates, venue, call for papers and tickets will be announced soon.
   </p>
   {% if site.interest_endpoint and site.interest_endpoint != "" %}
-  <form class="interest" action="{{ site.interest_endpoint }}" method="post">
-    <input class="interest__input" type="text" name="name" autocomplete="name" placeholder="name" aria-label="Name" maxlength="200">
-    <input class="interest__input" type="email" name="email" autocomplete="email" required placeholder="email@" aria-label="Email" maxlength="254">
-    <input class="interest__trap" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <form class="interest" action="{{ site.interest_endpoint }}" method="post" autocomplete="off">
+    <input class="interest__input" type="text" name="name" autocomplete="off" data-1p-ignore data-bwignore data-lpignore="true" data-form-type="other" placeholder="name" aria-label="Name" maxlength="200">
+    <input class="interest__input" type="email" name="email" autocomplete="off" data-1p-ignore data-bwignore data-lpignore="true" data-form-type="other" required placeholder="email@" aria-label="Email" maxlength="254">
+    <input class="interest__trap" type="text" name="website" tabindex="-1" autocomplete="off" data-1p-ignore data-bwignore data-lpignore="true" data-form-type="other" aria-hidden="true">
     <div class="cf-turnstile" data-sitekey="{{ site.turnstile_site_key }}" data-theme="light" data-appearance="interaction-only"></div>
     <button class="interest__button" type="submit">notify me →</button>
   </form>
