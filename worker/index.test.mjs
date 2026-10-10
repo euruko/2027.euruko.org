@@ -4,7 +4,7 @@ import worker from "./index.js";
 
 const env = {
   ALLOWED_ORIGINS: "https://2027.euruko.org",
-  TITO_ACCOUNT: "rubycon",
+  TITO_ACCOUNT: "venividicodi",
   TITO_EVENT: "euruko-2027",
   TITO_API_TOKEN: "tito-secret",
   TURNSTILE_SECRET: "turnstile-secret",
@@ -42,7 +42,7 @@ describe("interest worker", () => {
     assert.equal(response.status, 303);
     assert.equal(response.headers.get("Location"), "https://2027.euruko.org/interested/thanks/");
     const tito = calls.find((call) => call.url.includes("api.tito.io"));
-    assert.equal(tito.url, "https://api.tito.io/v3/rubycon/euruko-2027/interested_users");
+    assert.equal(tito.url, "https://api.tito.io/v3/venividicodi/euruko-2027/interested_users");
     assert.equal(tito.options.headers.Authorization, "Token token=tito-secret");
     assert.deepEqual(JSON.parse(tito.options.body), { interested_user: { email: "ada@example.com", name: "Ada" } });
   });
