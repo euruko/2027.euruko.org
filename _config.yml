@@ -4,10 +4,15 @@ description: >-
 baseurl: ""
 url: "https://2027.euruko.org"
 
+# Interested list form: URL of the Cloudflare Worker and the public Turnstile site key. The form is hidden while empty.
+interest_endpoint: "https://euruko-2027-interest.coorasse.workers.dev"
+turnstile_site_key: "0x4AAAAAAFS6qEjlu8VRvfDp"
+
 plugins:
   - jekyll-feed
 
 exclude:
+  - worker/
   - bin/
   - Gemfile
   - Gemfile.lock

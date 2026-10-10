@@ -105,6 +105,59 @@ a {
   }
 }
 
+.interest {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 36px;
+  max-width: 480px;
+
+  .interest__input {
+    flex: 1 1 200px;
+    min-width: 0;
+    border: 1px solid var(--color-ink);
+    border-radius: 0;
+    background: var(--color-surface);
+    color: var(--color-ink);
+    padding: 12px 14px;
+    font: 400 14px var(--font-mono);
+    outline: none;
+
+    &::placeholder {
+      color: var(--color-placeholder);
+    }
+
+    &:focus-visible {
+      border-color: var(--color-accent);
+    }
+  }
+
+  .interest__trap {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  .interest__button {
+    white-space: nowrap;
+    background: var(--color-ink);
+    color: var(--color-bg);
+    border: 1px solid var(--color-ink);
+    border-radius: 0;
+    padding: 12px 18px;
+    font: 500 14px var(--font-mono);
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+  }
+}
+
 .page {
   .page__title {
     margin: 0;

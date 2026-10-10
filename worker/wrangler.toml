@@ -1,0 +1,10 @@
+name = "euruko-2027-interest"
+main = "index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+ALLOWED_ORIGINS = "https://2027.euruko.org"
+TITO_ACCOUNT = "rubycon"
+TITO_EVENT = "euruko-2027"
+
+# Secrets, set with `wrangler secret put`: TITO_API_TOKEN, TURNSTILE_SECRET
